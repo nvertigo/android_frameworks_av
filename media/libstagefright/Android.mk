@@ -123,7 +123,7 @@ LOCAL_STATIC_LIBRARIES := \
         libFLAC \
         libmedia_helper \
 
-#LOCAL_WHOLE_STATIC_LIBRARIES := libavextensions
+LOCAL_WHOLE_STATIC_LIBRARIES := libavextensions
 
 ifeq ($(BOARD_USE_S3D_SUPPORT), true)
 ifeq ($(BOARD_USES_HWC_SERVICES), true)

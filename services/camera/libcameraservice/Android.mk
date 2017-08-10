@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(BOARD_PROVIDES_LIBCAMERASERVICE),true)
+
 LOCAL_PATH:= $(call my-dir)
 
 #
@@ -99,3 +101,4 @@ endif
 LOCAL_MODULE:= libcameraservice
 
 include $(BUILD_SHARED_LIBRARY)
+endif # BOARD_PROVIDES_LIBCAMERASERVICE

@@ -11,6 +11,8 @@
 # production of derivative works therefrom without the express permission of
 # the copyright owners is prohibited.
 #
+ifneq ($(BOARD_PROVIDES_LIBMEDIAPLAYERSERVICE),true)
+
 LOCAL_PATH:= $(call my-dir)
 
 #
@@ -88,3 +90,4 @@ LOCAL_MODULE:= libmediaplayerservice
 include $(BUILD_SHARED_LIBRARY)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif # BOARD_PROVIDES_LIBMEDIAPLAYERSERVICE
